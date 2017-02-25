@@ -14,7 +14,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -23,7 +22,21 @@
         <service
             android:name=".Mensaje"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FirebaseMensaje"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

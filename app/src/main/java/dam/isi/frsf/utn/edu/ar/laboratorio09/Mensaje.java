@@ -21,7 +21,7 @@ public class Mensaje extends FirebaseInstanceIdService {
 
     @Override
     public void onTokenRefresh() {
-// obtener token InstanceID token.
+    // obtener token InstanceID token.
         String refreshedToken = FirebaseInstanceId.getInstance().getToken();
         saveTokenToPrefs(refreshedToken);
     }

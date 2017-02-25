@@ -13,8 +13,113 @@
     tools:context="dam.isi.frsf.utn.edu.ar.laboratorio09.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".35">
+
+            <TextView
+                android:text="Hora Max. X:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1" />
+
+            <TextView
+                android:text="Magnitud:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:text="Hora Max. Y:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:text="Magnitud:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:text="Hora Max. Z:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:text="Magnitud:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".65">
+
+            <TextView
+                android:text="x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/valor_en_x" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/magnitud_x" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:text="y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/valor_en_y" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/magnitud_y" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:text="z"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/valor_en_z" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/magnitud_z" />
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>
